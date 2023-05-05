@@ -1,0 +1,10 @@
+if __name__ == '__main__':
+    student = []
+    for i in range(int(input())):
+        name = input()
+        score = float(input())
+        student.append([name, score])
+    
+    sec_lowest = sorted(list([score for name, score in student]))[1]
+    
+    print('\n'.join(name for name, score in student if score == sec_lowest))
