@@ -7,4 +7,6 @@ if __name__ == '__main__':
     
     sec_lowest = sorted(list([score for name, score in student]))[1]
     
-    print('\n'.join(name for name, score in student if score == sec_lowest))
+    selected = sorted(list([name for name, score in student if score == sec_lowest]))
+    
+    print('\n'.join(selected))
